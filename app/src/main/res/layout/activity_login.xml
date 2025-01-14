@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.LoginActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_below="@id/main"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo_darpg">
+        </ImageView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/logo"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:text="Centralized Public Grievance\n Redressal And Monitoring System"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_below="@id/header"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvlogin"
+            android:layout_width="match_parent"
+            android:text="@string/login"
+            android:layout_marginLeft="15dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:text="@string/mobile_header"
+            android:textSize="16dp"
+            android:textColor="@color/grey"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/tvlogin"
+            android:layout_height="wrap_content">
+        </TextView>
+        <RadioGroup
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/welcome"
+            android:id="@+id/radioGroupType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Citizen"
+                android:textSize="18sp"
+                android:checked="true" />
+
+
+
+            <RadioButton
+                android:layout_marginLeft="10dp"
+                android:id="@+id/radioOfficer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Officer"
+                android:textSize="18sp" />
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUsername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/radioGroupType"
+            android:hint="Mobile Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputUsername"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPassword"
+            android:layout_below="@id/txtUsername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="OTP"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvforget"
+            android:textColor="@color/gradient1"
+            android:layout_width="match_parent"
+            android:text="Forgot Password?"
+            android:textSize="14dp"
+            android:layout_below="@id/txtPassword"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:backgroundTint="@null"
+            android:layout_below="@+id/tvforget"
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Send OTP"
+            android:background="@drawable/gradient_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape_capsule"
+            android:padding="8dp"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvregister"
+            android:textColor="@color/gradient1"
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:layout_below="@id/login"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        </TextView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

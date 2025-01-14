@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/header1"
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo">
+        </ImageView>
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:text="Welcome to"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/logo"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:text="Ministry Of External Affairs"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/welcome"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/loginheader"
+            android:layout_width="match_parent"
+            android:text="Government Of India"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/header"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/shape"
+        android:layout_marginTop="-30dp"
+        android:layout_below="@id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvlogin"
+            android:layout_width="match_parent"
+            android:text="Register"
+            android:textSize="18dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUsername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/tvlogin"
+            android:hint="Full Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputUsername"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtMobileNo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/txtUsername"
+            android:hint="Mobile Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPassportNo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/txtMobileNo"
+            android:hint="Passport Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPassportNo"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPassword"
+            android:layout_below="@id/txtPassportNo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Password"
+            android:textColorHint="#A7A7A7"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black"
+            app:boxStrokeColor="#EAEAEE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtConfirmPassword"
+            android:layout_below="@id/txtPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Confirm Password"
+            android:textColorHint="#A7A7A7"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black"
+            app:boxStrokeColor="#EAEAEE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:backgroundTint="@null"
+            android:layout_below="@+id/txtConfirmPassword"
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Register"
+            android:background="@drawable/gradient_button"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

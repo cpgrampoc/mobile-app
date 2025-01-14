@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="140dp"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:background="@color/white"
+    android:layout_height="100dp">
+
+
+<RelativeLayout
+    android:background="@color/white"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="5dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:text="May 23, 2015"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/tvLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDepartment"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:gravity="left"
+        android:drawableLeft="@drawable/baseline_subdirectory_arrow_right_24"
+        android:textColor="@color/black"
+        android:text="Best Of Luck"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:drawableLeft="@drawable/baseline_subdirectory_arrow_right_24"
+        android:id="@+id/tvLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLevel1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:text="Best Of Luck"
+        android:textSize="10sp"/>
+
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

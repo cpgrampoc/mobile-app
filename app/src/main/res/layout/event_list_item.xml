@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:background="@color/white"
+    android:layout_height="60dp">
+
+
+<RelativeLayout
+    android:background="@color/white"
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:tint="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@drawable/baseline_insert_drive_file_24"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_toEndOf="@+id/ivPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="May 23, 2015"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_toEndOf="@+id/ivPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Best Of Luck"
+        android:textSize="12sp"/>
+
+
+
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
